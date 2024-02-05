@@ -17,6 +17,74 @@ var spec =
     ],
     schemes: ["https"],    // Sử dụng scheme gì? HTTP, HTTPS?
     paths: {
+        "/test-connection": {  
+            get: {     
+                tags: ["client"],
+                summary: "Kiểm tra kết nối",
+                description: "Kiểm tra kết nối",
+                operationId: "testConnection",
+                parameters: [  
+                    {
+                        "in": "query",
+                        "name": "event_code",
+                        "description": "Mã sự kiện",
+                        "required": "true",
+                        "schema": {
+                            "type": "string",
+                            "example": "BINHDINHF12024"
+                        },
+                    },
+                    {
+                        "in": "query",
+                        "name": "client_id",
+                        "description": "Mã khách hàng",
+                        "required": "true",
+                        "schema": {
+                            "type": "string",
+                            "example": "123"
+                        },
+                    },     
+                    {
+                        "in": "header",
+                        "name": "Accept",
+                        "required": "true",
+                        "schema": {
+                            "type": "string",
+                            "example": "application/json"
+                        },
+                    },   
+                    {
+                        "in": "header",
+                        "name": "App-Key",
+                        "description": "App Key (= API Key)",
+                        "required": "true",
+                        "schema": {
+                            "type": "string",
+                        },
+                    },      
+                    {
+                        "in": "header",
+                        "name": "User-Agent",
+                        "description": "User",
+                        "required": "true",
+                        "schema": {
+                            "type": "string",
+                            "example": "PDA"
+                        },
+                    },
+                    {
+                        "in": "header",
+                        "name": "Secret-Token",
+                        "description": "Token để access",
+                        "required": "true",
+                        "schema": {
+                            "type": "string",
+                            "example": "92f,.NX*4gK8>()O!UBRxxx"
+                        },
+                    },
+                ]
+            }
+        },
         "/get-client": {    // Đường dẫn. Kết hợp với host và basePath sẽ thành localhost:3000/api/v1/admin/
             get: {        // Phương thức gửi request: get, post, put, delete
                 tags: ["client"],
