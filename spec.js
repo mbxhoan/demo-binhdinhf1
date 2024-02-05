@@ -159,10 +159,20 @@ var spec =
                             "$ref": "#/definitions/Client"
                         }
                     },
+                    {
+                        "in": "header",
+                        "name": "Secret-Token",
+                        "description": "Token để access",
+                        "required": "true",
+                        "schema": {
+                            "type": "string",
+                            "example": "92f,.NX*4gK8>()O!UBRxxx"
+                        },
+                    },
                 ],
                 responses: {
                     200: {
-                        description: "Cập nhật thông tin khách hành thành công",
+                        description: "Cập nhật thông tin khách hàng thành công",
                         schema: {
                             $ref: "#/definitions/ApiResponse200_post" 
                         }
@@ -189,11 +199,7 @@ var spec =
     definitions: {
         Client: {                
             type: "object",         
-            properties: {       
-                secret_token: {
-                    type: "string",
-                    example: "92f,.NX*4gK8>()O!UBRxxx"
-                },
+            properties: {
                 event_code: {
                     type: "string",
                     example: "BINHDINHF12024"
@@ -346,69 +352,11 @@ var spec =
                     example: "200"
                 },
                 message: {    
-                    example: "Cập nhật thông tin khách hành thành công"
+                    example: "Cập nhật thông tin khách hàng thành công"
                 },
                 data: {
                     type: "object",
-                    properties: {
-                        id: {
-                            type: "number",
-                            example: 4604
-                        },
-                        qrcode: {
-                            type: "string",
-                            example: "BINHDINHF12024050623023542B9KGT" 
-                        },
-                        client_id: {
-                            type: "number",
-                            example: 8 
-                        },
-                        name: {
-                            type: "string",
-                            example: "Nguyễn Trần Nam" 
-                        },
-                        phone: {           
-                            type: "number",   
-                            example: "0902639xxx"
-                        },
-                        email: {
-                            type: "string",
-                            example: "ntn@gmail.com"   
-                        },
-                        type: {
-                            type: "string",
-                            example: "NORMAL"   
-                        },
-                        status: {
-                            type: "string",
-                            example: "NEW"   
-                        },
-                        img_qrcode: {
-                            type: "string",
-                            example: ""   
-                        },
-                        document_pdf: {
-                            type: "string",
-                            example: ""   
-                        },
-                        avatar: {
-                            type: "string",
-                            example: ""   
-                        },
-                        checkin_count: {
-                            type: "number",
-                            example: 0 
-                        },
-                        custom_fields: {
-                            type: "object",
-                            example: {
-                                "date_of_birth": "10/10/2001",
-                                "gender": "Name",
-                                "ticket_name": "VÉ 01 SỰ KIỆN KHÔNG BAO GỒM COUPON ẨM THỰC",
-                                "ticket_type": "Người lớn",
-                            }
-                        }
-                    }    
+                    example: null
                 },
             }
         },           
