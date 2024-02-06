@@ -7,7 +7,7 @@ var spec =
         version: "2.0",    
         title: "Delfi Technologies Tích hợp API - Checkin App"
     },
-    host: "https://api.checkin.delfi.vn", 
+    host: "https://api-bdf1.checkin.delfi.vn", 
     basePath: "",   
     tags: [   
         {
