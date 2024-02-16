@@ -25,26 +25,6 @@ var spec =
                 operationId: "testConnection",
                 parameters: [  
                     {
-                        "in": "query",
-                        "name": "event_code",
-                        "description": "Mã sự kiện",
-                        "required": "true",
-                        "schema": {
-                            "type": "string",
-                            "example": "BINHDINHF12024"
-                        },
-                    },
-                    {
-                        "in": "query",
-                        "name": "client_id",
-                        "description": "Mã khách hàng",
-                        "required": "true",
-                        "schema": {
-                            "type": "string",
-                            "example": "123"
-                        },
-                    },     
-                    {
                         "in": "header",
                         "name": "Accept",
                         "required": "true",
