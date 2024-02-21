@@ -282,8 +282,8 @@ var spec =
                                 example: {
                                     "date_of_birth": "10/10/2001",
                                     "gender": "Name",
-                                    "ticket_name": "VÉ 01 SỰ KIỆN KHÔNG BAO GỒM COUPON ẨM THỰC",
-                                    "ticket_type": "Người lớn",
+                                    "ticket_name": "Sự kiện UIM – ABP AQUABIKE không Coupon ẩm thực",
+                                    "ticket_type": "VIP Người lớn",
                                 }
                             },
                         }
@@ -364,8 +364,8 @@ var spec =
                             example: {
                                 "date_of_birth": "10/10/2001",
                                 "gender": "Nam",
-                                "ticket_name": "VÉ 01 SỰ KIỆN KHÔNG BAO GỒM COUPON ẨM THỰC\n",
-                                "ticket_standard": "Người lớn\n"
+                                "ticket_name": "Sự kiện UIM – ABP AQUABIKE không Coupon ẩm thực\n",
+                                "ticket_standard": "Platinum Người lớn\n"
                             }
                         }
                     }    
