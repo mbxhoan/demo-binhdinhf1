@@ -282,8 +282,8 @@ var spec =
                                 example: {
                                     "date_of_birth": "10/10/2001",
                                     "gender": "Name",
-                                    "ticket_name": "Sự kiện UIM – ABP AQUABIKE không Coupon ẩm thực",
-                                    "ticket_type": "VIP Người lớn",
+                                    "ticket_code": "UIM_ABP_NO_COUPON_TYPE_VIP_AD",
+                                    "tour": "Tour tham quan du lịch tại Bình Định"
                                 }
                             },
                         }
@@ -364,8 +364,8 @@ var spec =
                             example: {
                                 "date_of_birth": "10/10/2001",
                                 "gender": "Nam",
-                                "ticket_name": "Sự kiện UIM – ABP AQUABIKE không Coupon ẩm thực\n",
-                                "ticket_standard": "Platinum Người lớn\n"
+                                "ticket_code": "UIM_ABP_NO_COUPON_TYPE_VIP_AD",
+                                "tour": "Tour tham quan du lịch tại Bình Định"
                             }
                         }
                     }    
